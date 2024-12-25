@@ -20,62 +20,77 @@ import Discord from '../icons/Social/Discord.astro'
 import Section_certificados from '../components/Section_certificados.astro';
 ---
 
-<Layout title="Portfolio de Pietro - Programador Full-Stack"
-description="Mi objetivo es aprender y mejorar constantemente, participando en proyectos innovadores que me permitan ampliar mis conocimientos y aportar soluciones creativas y efectivas.">
+<Layout 
+	title="Kripals Portfolio - Full-Stack Web Application Developer"
+	description="I strive to continuously enhance my skills by working on innovative projects, leveraging my expertise in web development and e-commerce, while exploring emerging technologies like blockchain and AI to deliver impactful and efficient solutions.">
+	
 	<main class="px-4">
 		<Section>
-			<img class="rounded-full w-20 h-20 mb-4" 
-			src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHY5M3prNjdmdXV0YmVtMmlxNGNtc3pwNXplOGViMXl0cGFuc3JuNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fc4CgGnZOktRm/giphy.gif" alt="Pietro"
+			<img 
+				class="rounded-full w-20 h-20 mb-4" 
+				src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHY5M3prNjdmdXV0YmVtMmlxNGNtc3pwNXplOGViMXl0cGFuc3JuNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fc4CgGnZOktRm/giphy.gif" 
+				alt="Kripal"
 			/> 
-		<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-5 pb-6 lg:pb-10">
-			Hola, Soy Pietro 
-			<a href="https://www.linkedin.com/in/pietrobonacossa" target="_blank" rel="noopener"> <div class="flex justify-center items-center hover:scale-110 transition">
-				<Badge> Open To Work </Badge>
-			</div><a/></h1>
-		<h2 class="text-xl lg:text-2xl opacity-80 text-pretty max-w-{700px}">
-			<span class="text-blue-300">Programador Full-Stack.</span> <br>Tengo 20 años, soy de Tucumán, Argentina 🧉. Me especializo en tecnología y desarrollo de software, siempre buscando aprender y mejorar. Mi objetivo es participar en proyectos innovadores que amplíen mis conocimientos y permitan aportar soluciones creativas y efectivas.
-		</h2>
-		<nav class="flex gap-x-5 mt-6 flex-wrap">
-			<Social_icons href="https://www.linkedin.com/in/pietrobonacossa">
-				<Linkedin class="size-4 md:size-6"/>
-				LinkedIn
-			</Social_icons>
-			<Social_icons href="https://github.com/Pietro923">
-				<Github class="size-4 md:size-6"/>
-				GitHub
-			</Social_icons>
-			<Social_icons href="mailto:jpbonacossa@gmail.com">
-				<Gmail class="size-4 md:size-6"/>
-				jpbonacossa@gmail.com
-			</Social_icons>
-			<Social_icons href="https://discord.com/users/222491467275436033">
-				<Discord class="size-4 md:size-6"/>
-				Bonacxito
-			</Social_icons>
-		</nav>
+			
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-5 pb-6 lg:pb-10">
+				Hi, I'm Kripal 
+				<a href="https://www.linkedin.com/in/kripalsth" target="_blank" rel="noopener"> 
+					<div class="flex justify-center items-center hover:scale-110 transition">
+						<Badge> Open To Work </Badge>
+					</div>
+				<a/>
+			</h1>
+
+			<h2 class="text-xl lg:text-2xl opacity-80 text-pretty max-w-{700px}">
+				<span class="text-blue-300">Full-Stack Web Application Developer</span> 
+				<br>I’m a software developer based in Ontario, Canada, passionate about technology and dedicated to continuous learning and improvement. My goal is to contribute to innovative projects that challenge me, enhance my expertise, and enable me to create impactful and creative solutions.
+			</h2>
+			
+			<nav class="flex gap-x-5 mt-6 flex-wrap">
+				<Social_icons href="https://www.linkedin.com/in/kripalsth">
+					<Linkedin class="size-4 md:size-6"/>
+					LinkedIn
+				</Social_icons>
+				<Social_icons href="https://github.com/kripals">
+					<Github class="size-4 md:size-6"/>
+					GitHub
+				</Social_icons>
+				<Social_icons href="mailto:kripalshtha@gmail.com">
+					<Gmail class="size-4 md:size-6"/>
+					kripalshtha@gmail.com
+				</Social_icons>
+				<Social_icons href="https://discord.com/users/222491467275436033">
+					<Discord class="size-4 md:size-6"/>
+					Bonacxit
+				</Social_icons>
+			</nav>
 		</Section>
+
 		<Section_tecno id="tecnologias">
 			<Tecnologias/>
 		</Section_tecno>
+
 		<Section id="proyectos">
 			<div class="flex justify-center">
 				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Code class="size-8 "/>Proyectos </h2>
 			</div>
 			<Proyectos/>
 		</Section>
+		
 		<Section_certificados id="certificados">
 			<div class="flex justify-center">
 				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Cert_icon class="size-8 "/>Certificados </h2>
 			</div>
 			<Certificados/>
 		</Section_certificados>
+		
 		<Section_sobremi id="sobre_mi">
 			<div class="flex justify-center">
 				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Me_icons class="size-8 "/>Sobre mí </h2>
 			</div>
 			<Sobre_mi/>
 		</Section_sobremi>
+		
 		<Footer/>
 	</main>
-	
 </Layout>
