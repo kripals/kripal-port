@@ -7,21 +7,21 @@ import Social_icons from '../components/Social_icons.astro'
 import Gmail from '../icons/Social/Gmail.astro'
 import Section from '../components/Section.astro';
 import Section_tecno from '../components/Section_tecno.astro';
-import Tecnologias from '../components/Tecnologias.astro';
-import Code from '../icons/Titulos/Code.astro'
-import Proyectos from '../components/Proyectos.astro'
-import Certificados from '../components/Certificados.astro'
-import Sobre_mi from '../components/Sobre_mi.astro'
-import Cert_icon from '../icons/Titulos/Cert_icon.astro'
-import Me_icons from '../icons/Titulos/Me_icon.astro'
-import Section_sobremi from '../components/Section_sobremi.astro'
+import Technologies from '../components/Technologies.astro';
+import Code from '../icons/Titles/Code.astro'
+import Projects from '../components/Projects.astro'
+import Certificates from '../components/Certificates.astro'
+import About_me from '../components/About_me.astro'
+import Cert_icon from '../icons/Titles/Cert_icon.astro'
+import Me_icons from '../icons/Titles/Me_icon.astro'
+import Section_about_me from '../components/Section_about_me.astro'
 import Footer from '../components/Footer.astro'
 import Discord from '../icons/Social/Discord.astro'
-import Section_certificados from '../components/Section_certificados.astro';
+import Section_certificates from '../components/Section_certificates.astro';
 ---
 
 <Layout 
-	title="Kripals Portfolio - Full-Stack Web Application Developer"
+	title="Kripal's Portfolio - Full-Stack Web Application Developer"
 	description="I strive to continuously enhance my skills by working on innovative projects, leveraging my expertise in web development and e-commerce, while exploring emerging technologies like blockchain and AI to deliver impactful and efficient solutions.">
 	
 	<main class="px-4">
@@ -66,30 +66,30 @@ import Section_certificados from '../components/Section_certificados.astro';
 			</nav>
 		</Section>
 
-		<Section_tecno id="tecnologias">
-			<Tecnologias/>
+		<Section_tecno id="technologies">
+			<Technologies/>
 		</Section_tecno>
 
-		<Section id="proyectos">
+		<Section id="projects">
 			<div class="flex justify-center">
-				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Code class="size-8 "/>Proyectos </h2>
+				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Code class="size-8 "/>Projects </h2>
 			</div>
-			<Proyectos/>
+			<Projects/>
 		</Section>
 		
-		<Section_certificados id="certificados">
+		<Section_certificates id="certificates">
 			<div class="flex justify-center">
-				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Cert_icon class="size-8 "/>Certificados </h2>
+				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Cert_icon class="size-8 "/>Certificates </h2>
 			</div>
-			<Certificados/>
-		</Section_certificados>
+			<Certificates/>
+		</Section_certificates>
 		
-		<Section_sobremi id="sobre_mi">
+		<Section_about_me id="about_me">
 			<div class="flex justify-center">
-				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Me_icons class="size-8 "/>Sobre mí </h2>
+				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Me_icons class="size-8 "/>About Me </h2>
 			</div>
-			<Sobre_mi/>
-		</Section_sobremi>
+			<About_me/>
+		</Section_about_me>
 		
 		<Footer/>
 	</main>
