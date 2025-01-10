@@ -1,8 +1,32 @@
 ---
-import Html from "../icons/Technologies/Languages/Html.astro";
-import Css from "../icons/Technologies/Languages/Css.astro";
-import Js from "../icons/Technologies/Languages/Js.astro";
-import React from "../icons/Technologies/Frameworks_Libraries/React.astro";
+import Html from '../icons/Technologies/Languages/Html.astro';
+import Css from '../icons/Technologies/Languages/Css.astro';
+import Python from '../icons/Technologies/Languages/Python.astro';
+import Js from '../icons/Technologies/Languages/Js.astro';
+import Php from '../icons/Technologies/Languages/Php.astro';
+import Bootstrap from '../icons/Technologies/Frameworks_Libraries/Bootstrap.astro';
+import Laravel from '../icons/Technologies/Frameworks_Libraries/Laravel.astro';
+import Vuejs from '../icons/Technologies/Frameworks_Libraries/Vuejs.astro';
+import Node from '../icons/Technologies/Frameworks_Libraries/Node.astro';
+import React from '../icons/Technologies/Frameworks_Libraries/React.astro';
+import Tailwind from '../icons/Technologies/Frameworks_Libraries/Tailwind.astro';
+import Mongo from '../icons/Technologies/Databases/Mongo.astro';
+import Mysql from '../icons/Technologies/Databases/Mysql.astro';
+import Postgresql from '../icons/Technologies/Databases/Postgresql.astro';
+import Git from '../icons/Technologies/Devops/Git.astro';
+import Angular from "../icons/Technologies/Frameworks_Libraries/Angular.astro";
+import Mariadb from '../icons/Technologies/Databases/Mariadb.astro';
+import Docker from '../icons/Technologies/Devops/Docker.astro';
+import Aws from '../icons/Technologies/Devops/Aws.astro';
+import Azure from '../icons/Technologies/Devops/Azure.astro';
+import Blockchain from '../icons/Technologies/Stack/Blockchain.astro';
+import Wordpress from '../icons/Technologies/Additional_Tools/Wordpress.astro';
+import Magento from '../icons/Technologies/Additional_Tools/Magento.astro';
+import Codeigniter from "../icons/Technologies/Frameworks_Libraries/Codeigniter.astro";
+import Restapi from '../icons/Technologies/Stack/RestApi.astro';
+import Nagios from '../icons/Technologies/Stack/Nagios.astro';
+import Vmware from '../icons/Technologies/Stack/Vmware.astro';
+import Microservices from '../icons/Technologies/Stack/Microservice.astro';
 import Social_icons from "./Social_icons.astro";
 import Github from "../icons/Social/Github.astro";
 import Link from "../icons/Social/Link.astro";
@@ -25,27 +49,163 @@ const TAGS = {
   },
   React: {
     name: "React",
-    class: "bg-[#1c7777] text-white",
+    class: "bg-[#339989] text-white",
     icon: React,
+  },
+  TailwindCss: {
+    name: "Tailwind CSS",
+    class: "bg-[#349999] text-white",
+    icon: Tailwind,
+  },
+  Bootstrap: {
+    name: "Bootstrap",
+    class: "bg-[#5a3e7a] text-white",
+    icon: Bootstrap,
+  },
+  Vue: {
+    name: "Vue.js",
+    class: "bg-[#388f88] text-white",
+    icon: Vuejs,
+  },
+  Angular: {
+    name: "Angular",
+    class: "bg-[#992a2a] text-white",
+    icon: Angular,
+  },
+  Python: {
+    name: "Python",
+    class: "bg-[#337090] text-white",
+    icon: Python,
+  },
+  Php: {
+    name: "PHP",
+    class: "bg-[#6e5b9e] text-white",
+    icon: Php,
+  },
+  NodeJs: {
+    name: "Node.js",
+    class: "bg-[#557e4c] text-white",
+    icon: Node,
+  },
+  Laravel: {
+    name: "Laravel",
+    class: "bg-[#b52828] text-white",
+    icon: Laravel,
+  },
+  CodeIgniter: {
+    name: "CodeIgniter",
+    class: "bg-[#b23314] text-white",
+    icon: Codeigniter,
+  },
+  Mysql: {
+    name: "MySQL",
+    class: "bg-[#385a72] text-white",
+    icon: Mysql,
+  },
+  Postgresql: {
+    name: "PostgreSQL",
+    class: "bg-[#2c5776] text-white",
+    icon: Postgresql,
+  },
+  MongoDb: {
+    name: "MongoDB",
+    class: "bg-[#3c8248] text-white",
+    icon: Mongo,
+  },
+  MariaDb: {
+    name: "MariaDB",
+    class: "bg-[#1f3d3d] text-white",
+    icon: Mariadb,
+  },
+  Docker: {
+    name: "Docker",
+    class: "bg-[#397db8] text-white",
+    icon: Docker,
+  },
+  Git: {
+    name: "Git",
+    class: "bg-[#b54b2e] text-white",
+    icon: Git,
+  },
+  Aws: {
+    name: "AWS",
+    class: "bg-[#1e2c38] text-white",
+    icon: Aws,
+  },
+  Azure: {
+    name: "Azure",
+    class: "bg-[#1e4e88] text-white",
+    icon: Azure,
+  },
+  Wordpress: {
+    name: "WordPress",
+    class: "bg-[#28577b] text-white",
+    icon: Wordpress,
+  },
+  Magento: {
+    name: "Magento",
+    class: "bg-[#c55a32] text-white",
+    icon: Magento,
+  },
+  Blockchain: {
+    name: "Blockchain",
+    class: "bg-[#1b2638] text-white",
+    icon: Blockchain,
+  },
+  RestApi: {
+    name: "Rest API",
+    class: "bg-[#1b2638] text-white",
+    icon: Restapi,
+  },
+  Vmware: {
+    name: "VMware",
+    class: "bg-[#1b2638] text-white",
+    icon: Vmware,
+  },
+  Nagios: {
+    name: "Nagios",
+    class: "bg-[#cc5138] text-white",
+    icon: Nagios,
+  },
+  Microservices: {
+    name: "Microservices",
+    class: "bg-[#cc5138] text-white",
+    icon: Microservices,
   },
 };
 
 const PROJECTS = [
   {
-    title: "Fictional Company - Informative Website",
-    description: "Final project for the Programming II course. Built using HTML, CSS, JavaScript, and React. Includes features like a chatbot and an appointment scheduling system.",
-    link: "#",
-    github: "https://github.com/Pietro923/Programacion",
-    image: "/projects/project1.webp",
-    tags: [TAGS.Html, TAGS.Css, TAGS.Js, TAGS.React],
+    title: "Data Center Server Management System",
+    description: "Designed and implemented a modular server management system using micro-frameworks methodology and domain-driven design. Integrated VMware APIs and Nagios for real-time monitoring, automated alerts, and efficient resource management in a data center environment. Features included RESTful APIs and scalable domain-specific modules.",
+    link: "https://accessworld.net/", // Replace with the actual link if different
+    github: "", // Add GitHub repository link if available
+    image: "/projects/awt.png", // Replace with the appropriate image path
+    tags: [
+      TAGS.Python, 
+      TAGS.RestApi, 
+      TAGS.Docker, 
+      TAGS.Vmware, 
+      TAGS.Nagios, 
+      TAGS.Php, 
+      TAGS.Laravel, 
+      TAGS.Vue],
   },
   {
-    title: "Weather Application",
-    description: "A page created to use a weather API and test its functionality. Built with HTML, CSS, and JavaScript.",
-    link: "#",
-    github: "https://github.com/Pietro923/api-del-clima",
-    image: "/projects/project2.webp",
-    tags: [TAGS.Html, TAGS.Css, TAGS.Js],
+    title: "Sastodeal - E-commerce Platform",
+    description: "Contributed to the development and maintenance of a large-scale e-commerce platform built on a microservices architecture. Worked extensively on backend services using Laravel and CodeIgniter, along with other microservice frameworks. Enhanced the user experience with Vue.js and React.js for dynamic and responsive interfaces. Utilized Docker for containerization and AWS for cloud deployment, ensuring scalability and performance.",
+    link: "https://www.sastodeal.com/", // Replace with the actual website link if available
+    github: "", // Add a repository link if applicable
+    image: "/projects/sastodeal.jpeg", // Replace with an appropriate image path
+    tags: [
+        TAGS.Laravel,
+        TAGS.CodeIgniter,
+        TAGS.Vue,
+        TAGS.React,
+        TAGS.Docker,
+        TAGS.Aws,
+        TAGS.Microservices
+    ],
   },
 ];
 ---
@@ -62,11 +222,11 @@ const PROJECTS = [
       <div class="w-full md:w-1/2 flex flex-col justify-center">
         <h3 class="text-2xl font-bold mb-2">{title}</h3>
         <div class="flex flex-wrap mt-2">
-          <ul class="flex flex-row mb-2 gap-x-2">
+          <ul class="flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <li key={tag.name}>
-                <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
-                  <tag.icon class="size-4" />
+              <li key={tag.name} class="w-full sm:w-auto">
+                <span class={`flex items-center gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
+                  <tag.icon class="w-4 h-4 sm:w-5 sm:h-5" />
                   {tag.name}
                 </span>
               </li>
