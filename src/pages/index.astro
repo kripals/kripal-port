@@ -18,32 +18,32 @@ import Section_about_me from '../components/Section_about_me.astro'
 import Footer from '../components/Footer.astro'
 import Discord from '../icons/Social/Discord.astro'
 import Section_certificates from '../components/Section_certificates.astro';
+import Experience from '../components/Experience.astro'
+import Briefcase from '../icons/Titles/Briefcase.astro'
 ---
 
 <Layout 
-	title="Kripal's Portfolio - Full-Stack Web Application Developer"
-	description="I strive to continuously enhance my skills by working on innovative projects, leveraging my expertise in web development and e-commerce, while exploring emerging technologies like blockchain and AI to deliver impactful and efficient solutions.">
+	title="Kripal Shrestha - Software Developer | Backend & Full Stack"
+	description="Software Developer in Kitchener, Ontario with 10+ years of experience building backend services, REST APIs, and full stack web applications with Python, PHP, Go, and modern JavaScript frameworks.">
 	
 	<main class="px-4">
-		<Section>
+		<Section id="home">
 			<img 
 				class="rounded-full w-20 h-15 mb-4" 
 				src="/images/profile.jpg" 
 				alt="Kripal"
 			/> 
 			
-			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-5 pb-6 lg:pb-10">
-				Hi, I'm Kripal 
-				<a href="https://www.linkedin.com/in/kripalsth" target="_blank" rel="noopener"> 
-					<div class="flex justify-center items-center hover:scale-110 transition">
-						<Badge> Open To Work </Badge>
-					</div>
-				<a/>
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row flex-wrap items-center gap-x-5 pb-6 lg:pb-10">
+				Hi, I'm Kripal
+				<a href="https://www.linkedin.com/in/kripalsth" target="_blank" rel="noopener" class="flex items-center hover:scale-110 transition">
+					<Badge>Software Developer @ Bell Canada</Badge>
+				</a>
 			</h1>
 
-			<h2 class="text-xl lg:text-2xl opacity-80 text-pretty max-w-{700px}">
-				<span class="text-blue-300">Full-Stack Web Application Developer</span> 
-				<br>I’m a software developer based in Ontario, Canada, passionate about technology and dedicated to continuous learning and improvement. My goal is to contribute to innovative projects that challenge me, enhance my expertise, and enable me to create impactful and creative solutions.
+			<h2 class="text-xl lg:text-2xl opacity-80 text-pretty max-w-[700px]">
+				<span class="text-blue-300">Software Developer | Backend &amp; Full Stack</span>
+				<br>Based in Kitchener, Ontario. I have 10+ years of experience building backend services, REST APIs, and full stack web applications with Python, PHP, and modern JavaScript frameworks. I work across microservices, Docker, AWS, and OpenShift, taking features from design through deployment.
 			</h2>
 			
 			<nav class="flex gap-x-5 mt-6 flex-wrap">
@@ -64,6 +64,13 @@ import Section_certificates from '../components/Section_certificates.astro';
 					Discord
 				</Social_icons>
 			</nav>
+		</Section>
+
+		<Section id="experience">
+			<div class="flex justify-center">
+				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Briefcase class="size-8 "/>Experience </h2>
+			</div>
+			<Experience/>
 		</Section>
 
 		<Section_tecno id="technologies">

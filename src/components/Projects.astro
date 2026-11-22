@@ -19,7 +19,6 @@ import Mariadb from '../icons/Technologies/Databases/Mariadb.astro';
 import Docker from '../icons/Technologies/Devops/Docker.astro';
 import Aws from '../icons/Technologies/Devops/Aws.astro';
 import Azure from '../icons/Technologies/Devops/Azure.astro';
-import Blockchain from '../icons/Technologies/Stack/Blockchain.astro';
 import Wordpress from '../icons/Technologies/Additional_Tools/Wordpress.astro';
 import Magento from '../icons/Technologies/Additional_Tools/Magento.astro';
 import Codeigniter from "../icons/Technologies/Frameworks_Libraries/Codeigniter.astro";
@@ -147,11 +146,6 @@ const TAGS = {
     class: "bg-[#c55a32] text-white",
     icon: Magento,
   },
-  Blockchain: {
-    name: "Blockchain",
-    class: "bg-[#1b2638] text-white",
-    icon: Blockchain,
-  },
   RestApi: {
     name: "Rest API",
     class: "bg-[#1b2638] text-white",
@@ -176,35 +170,38 @@ const TAGS = {
 
 const PROJECTS = [
   {
-    title: "Data Center Server Management System",
-    description: "Designed and implemented a modular server management system using micro-frameworks methodology and domain-driven design. Integrated VMware APIs and Nagios for real-time monitoring, automated alerts, and efficient resource management in a data center environment. Features included RESTful APIs and scalable domain-specific modules.",
-    link: "https://accessworld.net/", // Replace with the actual link if different
-    github: "", // Add GitHub repository link if available
-    image: "/projects/awt.png", // Replace with the appropriate image path
+    title: "Sastodeal - E-commerce Platform",
+    description: "Built and maintained microservices for order management, payments, and product catalogs on a high-volume e-commerce platform. Designed and optimized order processing and inventory systems with Laravel and CodeIgniter, delivered custom Magento 2 modules, and managed AWS infrastructure to keep the platform reliable during peak sales. Also developed Python analytics applications with Power BI integration for business insights.",
+    link: "https://www.sastodeal.com/",
+    github: "",
+    image: "/projects/sastodeal.jpeg",
     tags: [
-      TAGS.Python, 
-      TAGS.RestApi, 
-      TAGS.Docker, 
-      TAGS.Vmware, 
-      TAGS.Nagios, 
-      TAGS.Php, 
-      TAGS.Laravel, 
-      TAGS.Vue],
+      TAGS.Laravel,
+      TAGS.CodeIgniter,
+      TAGS.Microservices,
+      TAGS.Python,
+      TAGS.Magento,
+      TAGS.Vue,
+      TAGS.React,
+      TAGS.Docker,
+      TAGS.Aws,
+    ],
   },
   {
-    title: "Sastodeal - E-commerce Platform",
-    description: "Contributed to the development and maintenance of a large-scale e-commerce platform built on a microservices architecture. Worked extensively on backend services using Laravel and CodeIgniter, along with other microservice frameworks. Enhanced the user experience with Vue.js and React.js for dynamic and responsive interfaces. Utilized Docker for containerization and AWS for cloud deployment, ensuring scalability and performance.",
-    link: "https://www.sastodeal.com/", // Replace with the actual website link if available
-    github: "", // Add a repository link if applicable
-    image: "/projects/sastodeal.jpeg", // Replace with an appropriate image path
+    title: "Data Center Server Management System",
+    description: "A server management platform for AccessWorld Datacenter. Configured and monitored VPS and VMware servers (Nginx, Apache, MySQL) with Nagios for real-time monitoring and automated alerts, and automated routine server operations with Python scripts. Exposed functionality through RESTful APIs and a Laravel + Vue.js interface backed by a scalable MySQL architecture.",
+    link: "https://accessworld.net/",
+    github: "",
+    image: "/projects/awt.png",
     tags: [
-        TAGS.Laravel,
-        TAGS.CodeIgniter,
-        TAGS.Vue,
-        TAGS.React,
-        TAGS.Docker,
-        TAGS.Aws,
-        TAGS.Microservices
+      TAGS.Python,
+      TAGS.Php,
+      TAGS.Laravel,
+      TAGS.Vue,
+      TAGS.Mysql,
+      TAGS.RestApi,
+      TAGS.Vmware,
+      TAGS.Nagios,
     ],
   },
 ];
@@ -224,7 +221,7 @@ const PROJECTS = [
         <div class="flex flex-wrap mt-2">
           <ul class="flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <li key={tag.name} class="w-full sm:w-auto">
+              <li class="w-full sm:w-auto">
                 <span class={`flex items-center gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
                   <tag.icon class="w-4 h-4 sm:w-5 sm:h-5" />
                   {tag.name}

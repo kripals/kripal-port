@@ -1,0 +1,99 @@
+---
+const EXPERIENCE = [
+  {
+    company: "Bell Canada",
+    location: "Ontario, Canada · Hybrid",
+    role: "Software Developer",
+    period: "2026 – Present",
+    current: true,
+    points: [
+      "Develop and maintain backend services and REST APIs using <strong>Python, FastAPI, and Flask</strong>, backed by pytest test suites.",
+      "Build and enhance user-facing features with <strong>Vue.js and React</strong>, connecting them cleanly to backend services.",
+      "Deploy and run containerized applications with <strong>Docker</strong> on <strong>Red Hat OpenShift</strong> across environments.",
+      "Manage Python dependencies with <strong>Poetry and uv</strong> for consistent, reproducible builds.",
+    ],
+  },
+  {
+    company: "Featherwebs",
+    location: "Remote",
+    role: "Freelance / Contract Full Stack Web Application Developer",
+    period: "2019 – 2026",
+    points: [
+      "Delivered scalable applications using <strong>Python, PHP, Go, Node.js, Angular, and React</strong> for e-commerce and healthcare clients.",
+      "Designed and optimized <strong>RESTful and microservice APIs</strong> with SQL &amp; NoSQL databases, improving performance for high-volume systems.",
+      "Built and automated <strong>CI/CD pipelines with GitHub Actions, Docker, and AWS</strong> for faster, more reliable releases.",
+      "Reduced manual processes by <strong>40%</strong> through automation and data-driven solutions.",
+    ],
+  },
+  {
+    company: "Sequoia Software CA",
+    location: "Norwich, Ontario, Canada · Remote",
+    role: "Software Engineer",
+    period: "2023 – 2024",
+    points: [
+      "Redesigned the architecture of a core web application, improving <strong>scalability and performance</strong>.",
+      "Delivered new features with PHPUnit tests, streamlined the codebase, and reduced technical debt to accelerate release cycles.",
+      "Integrated <strong>Laravel and Vue.js</strong> and established <strong>Docker-based environments</strong>, improving deployment reliability.",
+      "Mentored junior developers through <strong>code reviews</strong> and collaborated with cross-functional teams.",
+    ],
+  },
+  {
+    company: "Teksewa",
+    location: "Kathmandu, Nepal",
+    role: "Software Engineer / Tech Lead",
+    period: "2021 – 2022",
+    points: [
+      "Led development on a legacy <strong>Laravel</strong> platform, modernizing the UI with <strong>Angular and Vue.js</strong>.",
+      "Refactored back-end services into <strong>modular, microservice-aligned components</strong> and introduced Python automation.",
+      "Supported deployments on <strong>AWS with Docker</strong>, ensuring consistent application performance.",
+      "Delivered enhancements that <strong>reduced customer onboarding time by 30%</strong> and improved platform stability.",
+    ],
+  },
+  {
+    company: "Sastodeal Ecommerce",
+    location: "Nepal",
+    role: "Full Stack Developer",
+    period: "2019 – 2021",
+    points: [
+      "Designed and optimized <strong>order processing and inventory systems</strong> with Laravel and CodeIgniter for high-volume e-commerce.",
+      "Built and maintained <strong>microservices</strong> for orders, payments, and product catalogs, and managed <strong>AWS infrastructure</strong> during peak sales.",
+      "Developed <strong>Python analytics applications</strong> with Power BI integration for actionable business insights.",
+      "Maintained MERN/LEMP stacks and delivered custom <strong>Magento 2</strong> modules.",
+    ],
+  },
+  {
+    company: "AccessWorld Datacenter",
+    location: "Nepal",
+    role: "Full Stack Web Application Developer",
+    period: "2016 – 2019",
+    points: [
+      "Delivered <strong>25+ client-facing applications</strong> with Laravel, WordPress, and custom APIs across diverse industries.",
+      "Designed scalable <strong>MySQL</strong> architectures and automated server operations with <strong>Python scripts</strong>.",
+      "Configured and monitored <strong>VPS and VMware servers</strong> (Nginx, Apache, MySQL) using <strong>Nagios</strong>.",
+    ],
+  },
+];
+---
+
+<ol class="relative border-s border-white/10 ms-2">
+  {EXPERIENCE.map(({ company, location, role, period, current, points }) => (
+    <li class="mb-12 ms-6 last:mb-0">
+      <span class:list={[
+        "absolute -start-[7px] mt-2 size-3.5 rounded-full border border-neutral-900",
+        current ? "bg-green-400" : "bg-blue-300",
+      ]}></span>
+
+      <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-4">
+        <h3 class="text-xl md:text-2xl font-bold text-white">{role}</h3>
+        <time class="text-sm opacity-70 whitespace-nowrap">{period}</time>
+      </div>
+      <p class="text-blue-300 font-semibold mt-1">
+        {company} <span class="text-white/60 font-normal">· {location}</span>
+      </p>
+
+      <ul class="mt-3 space-y-2 list-disc ps-5 opacity-90 text-pretty [&_strong]:text-white [&_strong]:font-semibold">
+        {points.map((point) => <li set:html={point} />)}
+      </ul>
+    </li>
+  ))}
+</ol>
