@@ -93,8 +93,9 @@ const GROUPS = [
   },
   {
     title: "Cloud & DevOps",
+    note: "AWS: EC2, S3, RDS, Lambda, CloudFormation",
     items: [
-      { name: "AWS (EC2, S3, RDS, Lambda, CloudFormation)", icon: Aws },
+      { name: "AWS", icon: Aws },
       { name: "Azure", icon: Azure },
       { name: "Docker", icon: Docker },
       { name: "Red Hat OpenShift", icon: Openshift },
@@ -138,25 +139,25 @@ const GROUPS = [
 ];
 ---
 
-<div class="flex flex-col items-center">
+<div class="flex flex-col items-center px-4">
   <h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4">
     <Techno_icon class="w-12 h-12" /> Technologies
   </h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 p-4">
-    {GROUPS.map(({ title, items }) => (
-      <div>
-        <h3 class="text-2xl opacity-80 mb-6 text-center">{title}</h3>
-        <ul class="flex flex-wrap justify-center gap-4">
+  <div class="w-full columns-1 md:columns-2 lg:columns-3 gap-6">
+    {GROUPS.map(({ title, items, note }) => (
+      <section class="mb-6 break-inside-avoid rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+        <header class="mb-4 flex items-baseline justify-between gap-x-3">
+          <h3 class="text-lg font-semibold text-white">{title}</h3>
+          <span class="text-xs text-white/50">{items.length}</span>
+        </header>
+        <ul class="flex flex-wrap gap-2">
           {items.map(({ name, icon: Icon }) => (
-            <li>
-              <Technos_icons title={name} aria-label={name}>
-                <Icon class="w-12 h-12" />
-              </Technos_icons>
-            </li>
+            <Technos_icons name={name}><Icon /></Technos_icons>
           ))}
         </ul>
-      </div>
+        {note && <p class="mt-4 text-xs text-white/60">{note}</p>}
+      </section>
     ))}
   </div>
 </div>

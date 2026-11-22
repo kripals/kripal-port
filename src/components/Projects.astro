@@ -33,137 +33,110 @@ import Link from "../icons/Social/Link.astro";
 const TAGS = {
   Html: {
     name: "HTML",
-    class: "bg-[#963419] text-white",
     icon: Html,
   },
   Css: {
     name: "CSS",
-    class: "bg-[#07436b] text-white",
     icon: Css,
   },
   Js: {
     name: "JavaScript",
-    class: "bg-[#a39535] text-white",
     icon: Js,
   },
   React: {
     name: "React",
-    class: "bg-[#339989] text-white",
     icon: React,
   },
   TailwindCss: {
     name: "Tailwind CSS",
-    class: "bg-[#349999] text-white",
     icon: Tailwind,
   },
   Bootstrap: {
     name: "Bootstrap",
-    class: "bg-[#5a3e7a] text-white",
     icon: Bootstrap,
   },
   Vue: {
     name: "Vue.js",
-    class: "bg-[#388f88] text-white",
     icon: Vuejs,
   },
   Angular: {
     name: "Angular",
-    class: "bg-[#992a2a] text-white",
     icon: Angular,
   },
   Python: {
     name: "Python",
-    class: "bg-[#337090] text-white",
     icon: Python,
   },
   Php: {
     name: "PHP",
-    class: "bg-[#6e5b9e] text-white",
     icon: Php,
   },
   NodeJs: {
     name: "Node.js",
-    class: "bg-[#557e4c] text-white",
     icon: Node,
   },
   Laravel: {
     name: "Laravel",
-    class: "bg-[#b52828] text-white",
     icon: Laravel,
   },
   CodeIgniter: {
     name: "CodeIgniter",
-    class: "bg-[#b23314] text-white",
     icon: Codeigniter,
   },
   Mysql: {
     name: "MySQL",
-    class: "bg-[#385a72] text-white",
     icon: Mysql,
   },
   Postgresql: {
     name: "PostgreSQL",
-    class: "bg-[#2c5776] text-white",
     icon: Postgresql,
   },
   MongoDb: {
     name: "MongoDB",
-    class: "bg-[#3c8248] text-white",
     icon: Mongo,
   },
   MariaDb: {
     name: "MariaDB",
-    class: "bg-[#1f3d3d] text-white",
     icon: Mariadb,
   },
   Docker: {
     name: "Docker",
-    class: "bg-[#397db8] text-white",
     icon: Docker,
   },
   Git: {
     name: "Git",
-    class: "bg-[#b54b2e] text-white",
     icon: Git,
   },
   Aws: {
     name: "AWS",
-    class: "bg-[#1e2c38] text-white",
     icon: Aws,
   },
   Azure: {
     name: "Azure",
-    class: "bg-[#1e4e88] text-white",
     icon: Azure,
   },
   Wordpress: {
     name: "WordPress",
-    class: "bg-[#28577b] text-white",
     icon: Wordpress,
   },
   Magento: {
     name: "Magento",
-    class: "bg-[#c55a32] text-white",
     icon: Magento,
   },
   RestApi: {
     name: "Rest API",
-    class: "bg-[#1b2638] text-white",
     icon: Restapi,
   },
   Vmware: {
     name: "VMware",
-    class: "bg-[#1b2638] text-white",
     icon: Vmware,
   },
   Nagios: {
     name: "Nagios",
-    class: "bg-[#cc5138] text-white",
     icon: Nagios,
   },
   Microservices: {
     name: "Microservices",
-    class: "bg-[#cc5138] text-white",
     icon: Microservices,
   },
 };
@@ -221,9 +194,9 @@ const PROJECTS = [
         <div class="flex flex-wrap mt-2">
           <ul class="flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <li class="w-full sm:w-auto">
-                <span class={`flex items-center gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
-                  <tag.icon class="w-4 h-4 sm:w-5 sm:h-5" />
+              <li>
+                <span class="flex items-center gap-x-1.5 rounded-full border border-white/10 bg-white/5 py-1 pl-1.5 pr-2.5 text-xs text-white/90">
+                  <tag.icon class="size-4" />
                   {tag.name}
                 </span>
               </li>
